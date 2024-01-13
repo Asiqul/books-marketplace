@@ -1,3 +1,72 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --gradient: linear-gradient(to top left, #231557, #44107a, #ff1361);
+    --background: 269, 98.05%, 98.42%;
+    --foreground: 269, 6.1%, 0.84%;
+
+    --muted: 269, 6.1%, 92.1%;
+    --muted-foreground: 269, 3.05%, 42.1%;
+
+    --popover: 269, 59.5%, 86.57%;
+    --popover-foreground: 269, 6.1%, 1.05%;
+
+    --card: 269, 59.5%, 86.57%;
+    --card-foreground: 269, 6.1%, 1.05%;
+
+    --border: 269, 11.1%, 89.84%;
+    --input: 269, 11.1%, 89.84%;
+
+    --primary: 275, 72%, 29%;
+    --primary-foreground: 269, 1.22%, 92.1%;
+
+    --secondary: 269, 3.05%, 96.05%;
+    --secondary-foreground: 269, 4.66%, 12.1%;
+
+    --accent: 269, 3.05%, 96.05%;
+    --accent-foreground: 269, 4.66%, 12.1%;
+
+    --destructive: 0, 84.2%, 60.2%;
+    --destructive-foreground: 0, 0%, 98%;
+
+    --ring: 269, 61%, 21%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --gradient: linear-gradient(to top left, #bf5ae0, #a811da);
+
+    --background: 303 44.2% 4.96%;
+    --foreground: 303 6.800000000000001% 98.1%;
+
+    --muted: 303 34% 18.6%;
+    --muted-foreground: 303 6.800000000000001% 56.2%;
+
+    --popover: 303 51.4% 8.06%;
+    --popover-foreground: 303 6.800000000000001% 98.1%;
+
+    --card: 303 51.4% 8.06%;
+    --card-foreground: 303 6.800000000000001% 98.1%;
+
+    --border: 303 34% 18.6%;
+    --input: 303 34% 18.6%;
+
+    --primary: 303 68% 62%;
+    --primary-foreground: 303 6.800000000000001% 6.2%;
+
+    --secondary: 303 34% 18.6%;
+    --secondary-foreground: 303 6.800000000000001% 98.1%;
+
+    --accent: 303 34% 18.6%;
+    --accent-foreground: 303 6.800000000000001% 98.1%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 303 6.800000000000001% 98.1%;
+
+    --ring: 303 68% 62%;
+  }
+}
