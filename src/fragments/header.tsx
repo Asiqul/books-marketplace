@@ -34,6 +34,7 @@ const Header = () => {
         {!disableHeader.includes(location) ? (
           <>
             <div className="grid grid-flow-col items-center justify-between mb-1 md:mb-0">
+              <div className"md:hidden">
               <Sheet>
                 <SheetTrigger className="hover:bg-accent rounded-full p-1">
                   <AlignJustify size={28} className="text-primary" />
@@ -58,7 +59,8 @@ const Header = () => {
                   </SheetHeader>
                 </SheetContent>
               </Sheet>
-
+              </div>
+                
               <Logo size="text-3xl" className="w-full" />
 
               <nav className="hidden md:block">
