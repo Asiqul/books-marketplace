@@ -34,30 +34,32 @@ const Header = () => {
         {!disableHeader.includes(location) ? (
           <>
             <div className="grid grid-flow-col items-center justify-between mb-1 md:mb-0">
-              <Sheet>
-                <SheetTrigger className="hover:bg-accent rounded-full p-1">
-                  <AlignJustify size={28} className="text-primary" />
-                </SheetTrigger>
-                <SheetContent side={'left'}>
-                  <SheetHeader>
-                    <SheetTitle>
-                      <Logo size="text-xl" className="w-full text-center" />
-                    </SheetTitle>
-                    <Separator />
-                    <ul className="flex flex-col gap-2 px-3 py-3 border-gray border-opacity-30">
-                      {Object.entries(menus).map(([key, value]) => (
-                        <li
-                          key={key}
-                          className="flex items-center gap-2 py-2.5 border-b-[1px] border-gray border-opacity-20 text-background-foreground hover:brightness-50 transition-all duration-200 ease-in-out cursor-pointer"
-                        >
-                          {value}
-                          <ChevronRight className="ml-auto h-4 w-4" />
-                        </li>
-                      ))}
-                    </ul>
-                  </SheetHeader>
-                </SheetContent>
-              </Sheet>
+              <div className="md:hidden">
+                <Sheet>
+                  <SheetTrigger className="hover:bg-accent rounded-full p-1">
+                    <AlignJustify size={28} className="text-primary" />
+                  </SheetTrigger>
+                  <SheetContent side={'left'}>
+                    <SheetHeader>
+                      <SheetTitle>
+                        <Logo size="text-xl" className="w-full text-center" />
+                      </SheetTitle>
+                      <Separator />
+                      <ul className="flex flex-col gap-2 px-3 py-3 border-gray border-opacity-30">
+                        {Object.entries(menus).map(([key, value]) => (
+                          <li
+                            key={key}
+                            className="flex items-center gap-2 py-2.5 border-b-[1px] border-gray border-opacity-20 text-background-foreground hover:brightness-50 transition-all duration-200 ease-in-out cursor-pointer"
+                          >
+                            {value}
+                            <ChevronRight className="ml-auto h-4 w-4" />
+                          </li>
+                        ))}
+                      </ul>
+                    </SheetHeader>
+                  </SheetContent>
+                </Sheet>
+              </div>
 
               <Logo size="text-3xl" className="w-full" />
 
